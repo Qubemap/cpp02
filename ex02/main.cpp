@@ -12,8 +12,8 @@ int main(void)
 	std::cout << "PDF TEST CASES" << std::endl << std::endl;
 	
 	std::cout << "a is " << a << std::endl;
-	std::cout << "++a is" << ++a << std::endl;
-	std::cout << "a is " << a << std::endl;
+	std::cout << "++a is " << ++a << std::endl;
+	std::cout << "a is " << a << "This is 1/256" << std::endl;
 	std::cout << "a++ is " << a++ << std::endl;
 	std::cout << "a is " << a << std::endl;
 

@@ -37,7 +37,7 @@ Fixed::Fixed(const float n)
 	std::cout << "Float constructor called" << std::endl;
 
 	this->number = roundf(n * (1 << this->fractionalbits));
-	// shift 1 to the left by the number of fractional bits, then multiply by n and round it. It's gonna be n * 256 everytime anyway
+	// shift 1 to the left by the number of fractional bits, then multiply by n and round it. It's gonna be n * 256
 
 	return;
 }
@@ -97,6 +97,6 @@ float Fixed::toFloat(void) const
 //overload operator << to output Fixed class
 std::ostream &operator << (std::ostream &output, const Fixed &copy)
 {
-	output << copy.toFloat();
+	output << copy.toFloat(); //converts the fixed point value to a floating point value and sends the latter into the output stream (output stream being console)
 	return output;
 }

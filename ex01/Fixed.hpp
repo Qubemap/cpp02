@@ -10,8 +10,8 @@ class Fixed {
 	public:
 
 		Fixed(void); //constructor
-		Fixed (const int n); //constructor that takes an integer
-		Fixed (const float n); //constructor that takes a float
+		Fixed (const int n); //constructor converts integer value to fixed point value
+		Fixed (const float n); //constructor converts floating point value to fixed point value
 
 		Fixed(const Fixed &copy); //copy constructor
 

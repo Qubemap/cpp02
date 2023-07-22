@@ -97,7 +97,7 @@ float Fixed::toFloat(void) const
 //overload operator << to output Fixed class
 std::ostream &operator << (std::ostream &output, const Fixed &copy)
 {
-	output << copy.toFloat();
+	output << copy.toFloat(); //output the float value of the fixed point value
 	return output;
 }
 
@@ -210,7 +210,7 @@ Fixed &Fixed::max(Fixed &a, Fixed &b)
 
 const Fixed &Fixed::min(const Fixed &a, const Fixed &b)
 {
-	std::cout << "const min called" << std::endl;
+	//std::cout << "const min called "<< std::endl;
 	if (a.getRawBits() < b.getRawBits())
 		return a;
 	else
@@ -219,7 +219,7 @@ const Fixed &Fixed::min(const Fixed &a, const Fixed &b)
 
 const Fixed &Fixed::max(const Fixed &a, const Fixed &b)
 {
-	std::cout << "const max called" << std::endl;
+	//std::cout << "const max called" << std::endl;
 	if (a.getRawBits() > b.getRawBits())
 		return a;
 	else
